@@ -1,0 +1,32 @@
+{
+  "name": "hydra-discord-music",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Self-hosted Discord music bot powered by Pulsify and Lavalink.",
+  "main": "Src/Shard.js",
+  "license": "MIT",
+  "engines": {
+    "node": "^24.15.0"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env Src/Shard.js",
+    "register": "node --env-file-if-exists=.env Src/Scripts/Slash.js",
+    "check:discord": "node --env-file-if-exists=.env Src/Scripts/Slash.js --check-install",
+    "test": "node --test \"test/*.test.js\"",
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+    "build": "npm run lint && npm run typecheck"
+  },
+  "dependencies": {
+    "discord.js": "14.28.1",
+    "mongoose": "9.13.1",
+    "pulsifyy": "0.1.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "^24.0.0",
+    "eslint": "10.15.0",
+    "typescript": "7.0.2",
+    "ws": "8.23.0"
+  }
+}

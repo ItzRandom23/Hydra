@@ -1,0 +1,15 @@
+# Copy to application.yml beside Lavalink.jar and set the password.
+server:
+  address: 127.0.0.1
+  port: 2333
+
+lavalink:
+  server:
+    password: ""
+    sources:
+      youtube: false
+      soundcloud: true
+      bandcamp: true
+      http: false
+      local: false
+    soundcloudSearchEnabled: true

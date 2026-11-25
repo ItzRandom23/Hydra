@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.*
+!.env.example
+/pulsify/
+/magmastream/
+/application.yml
+/application.yaml
+/Lavalink.jar
+/logs/
+/.hydra-state/
+*.log
+*.tgz
+coverage/
+*.local.yml
+*.local.yaml
+.DS_Store
